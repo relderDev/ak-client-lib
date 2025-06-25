@@ -42,8 +42,11 @@ This [example](example.html) shows how to add UI features just declaring the `ak
 - Behavior is triggered and controlled via `ak-*` attributes.
 - Components can register lifecycle logic (`_afterInitialization` method, `destroy` event, etc).
 
-**AKUiElement** objects add client-side UI (such as switching tabs, incrementing counters, show popups, etc.) to the DOM elements, while **AKComponent** objects handle the AJAX exchanges with the back-end (if any). Including this library as a "pure element library" with no use of **AKComponent** classes is perfectly possible.
+**AKUiElement** classes add client-side UI (such as switching tabs, incrementing counters, show popups, etc.) to the DOM elements, while **AKComponent** classes handle the AJAX exchanges with the back-end (if any). 
+
 Similar to CSS classes, a DOM element can be bound to multiple different **AKUiElement** classes (inheriting all of their UI enhancements); only one **AKComponent** class can be bound to it, though.
+
+Including this library as a "pure element library" with no use of **AKComponent** classes is perfectly possible.
 
 ## 📐 Design Philosophy
 
