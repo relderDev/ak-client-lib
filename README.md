@@ -15,18 +15,18 @@ Think of it as a minimal, extensible system that enhances your HTML, inspired by
 
 ## 📦 Installation
 
-Drop the library files on the client location needed and then include the init script in your HTML:
+Copy the library files to your project, then include the init script in your HTML:
 
 ```html
 <script src="path/to/ak-init.js"></script>
 ```
 
-If you want to use the styles given in bundle with the library, just add
+To use the bundled styles, include the following
 
 ```html
 <link rel="stylesheet" href="path/to/css/ak-main.css"/>
 <link rel="stylesheet" href="path/to/css/ak-main-vars.css"/>
-<!-- and any other chosen file under./css -->
+<!-- and any other desired file under path/to/css -->
 ```
 
 ## Example Usage
@@ -46,7 +46,7 @@ This [example](example.html) shows how to add UI features just declaring the `ak
 ## 📐 Design Philosophy
 
 - **HTML is the source of truth** — The goal is to empower designers and devs to build behavior-rich interfaces using familiar tools.
-- **Minimal assumptions** — AKClientLib assumes only that your elements have IDs and attributes; no virtual DOM, no state reactivity system.
+- **Minimal assumptions** — **AKClientLib** assumes only that your elements have IDs and attributes; no virtual DOM, no state reactivity system.
 - **Extendable by design** — Power users can write their own logic using JavaScript, but it's never required to get started.
 
 ## Extending AKClientLib
@@ -75,7 +75,7 @@ Extending components works exactly the same way, the only caveat being implement
 
 - All enhanced elements must have a **unique `id`**.
 - Component class names must be registered manually (no magic auto-discovery).
-- Prototype extensions (`Element.prototype`) are used for convenience (but soon this library features will be namespaced and the protype extension will be moved in a optional module)
+- Prototype extensions (`Element.prototype`) are used for convenience (but will soon be namespace functions attached to the Element protype only in a optional module)
 - The library doesn't use TypeScript — however, all public APIs are fully documented using JSDoc.
 
 ## License
