@@ -2,7 +2,7 @@
   
 # AKClientLib
 
-**AKClientLib** is a lightweight, declarative JavaScript library that lets you enhance your HTML with ready-to-use UX components — no build tools, no frameworks, just a few extra attributes.
+**AKClientLib** is a lightweight, declarative JavaScript library that lets you enhance your HTML with ready-to-use UX components - no build tools, no frameworks, just a few extra attributes.
 
 Think of it as a minimal, extensible system that enhances your HTML, inspired by libraries like [HTMX](https://htmx.org/), but with a built-in library of behaviors and components.
 
