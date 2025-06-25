@@ -84,4 +84,4 @@ All of the **AKClientLib** code code is distributed under the terms of the [**Ap
 
 ## 🧪 Want to contribute?
 
-PRs, ideas, and feature suggestions are welcome! Feel free to open a issue, a discussion or just contact me [here](x.com/RelderVGC).
+PRs, ideas, and feature suggestions are welcome! Feel free to open a issue, a discussion or just contact me [here](https://x.com/RelderVGC).
