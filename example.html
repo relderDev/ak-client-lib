@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/ak-main-vars.css"/>
+    <link rel="stylesheet" href="./css/ak-main.css"/>
+    <script src="ak-init.js"></script>
+    <script>
+      function cloneButtonClick(aButton) {
+        let index = Math.floor(Math.random() * 10000);
+        let clone = aButton.parentElement.cloneNode((index % 2 == 0));
+        clone.id = 'cloned-panel-' + index;
+        let tabPanel = document.getElementById('main-tabpanel').asAKObject('TabPanel');
+        tabPanel.addTab('Clone (' + index + ')', clone);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="ak-body">
+      <div id="main-tabpanel" class="ak-container" ak-ui-classes="TabPanel">
+        <div id="main-tab-panel-header" class="ak-tabpanel-header">
+          <div id="first-tab" class="ak-tabpanel-tab">
+            Primo tab
+          </div>
+        </div>
+        <div id="main-tab-panel-body" class="ak-tabpanel-body ak-container">
+          <div id="first-panel" class="ak-panel ak-tabpanel-panel ak-container">
+            <div class="ak-button" onclick="cloneButtonClick(this);">Clone this in a new tab!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
