@@ -1,4 +1,5 @@
 
+  
 # AKClientLib
 
 **AKClientLib** is a lightweight, declarative JavaScript library that lets you enhance your HTML with ready-to-use UX components — no build tools, no frameworks, just a few extra attributes.
@@ -7,11 +8,11 @@ Think of it as a minimal, extensible system that enhances your HTML, inspired by
 
 ## Why AKClientLib?
 
-- ✅ **Zero configuration** — Just include `ak-init.js` in the `<head>` (along with all of the [desired CSS files](./css)) and go.
-- ✅ **Declarative HTML-first syntax** — Add UI behaviour via `ak-ui-classes` attribute and AJAX behaviour with `ak-component-*` attributes. 
-- ✅ **Tiny footprint** — No dependencies, no bundlers.
-- ✅ **Extendable** — Easily register your own components in pure JS.
-- ✅ **Framework-agnostic** — Works with server-rendered pages, CMS templates, or even static HTML.
+- ✅ **Zero configuration** --- Just include `ak-init.js` in the `<head>` (along with all of the [desired CSS files](./css)) and go.
+- ✅ **Declarative HTML-first syntax** --- Add UI behaviour via `ak-ui-classes` attribute and AJAX behaviour with `ak-component-*` attributes. 
+- ✅ **Tiny footprint** --- No dependencies, no bundlers.
+- ✅ **Extendable** --- Easily register your own components in pure JS.
+- ✅ **Framework-agnostic** --- Works with server-rendered pages, CMS templates, or even static HTML.
 
 ## 📦 Installation
 
@@ -41,13 +42,14 @@ This [example](example.html) shows how to add UI features just declaring the `ak
 - Behavior is triggered and controlled via `ak-*` attributes.
 - Components can register lifecycle logic (`_afterInitialization` method, `destroy` event, etc).
 
-**AKUiElement** objects add client-side UI (such as switching tabs, incrementing counters, show popups, etc.) to the DOM elements, while **AKComponent** objects handle the AJAX exchanges with the back-end (if any). Including this library as a "pure element library" with no **AKComponent** (thus using only **AKUiElement**s) is perfectly possible.
+**AKUiElement** objects add client-side UI (such as switching tabs, incrementing counters, show popups, etc.) to the DOM elements, while **AKComponent** objects handle the AJAX exchanges with the back-end (if any). Including this library as a "pure element library" with no use of **AKComponent** classes is perfectly possible.
+Similar to CSS classes, a DOM element can be bound to multiple different **AKUiElement** classes (inheriting all of their UI enhancements); only one **AKComponent** class can be bound to it, though.
 
 ## 📐 Design Philosophy
 
-- **HTML is the source of truth** — The goal is to empower designers and devs to build behavior-rich interfaces using familiar tools.
-- **Minimal assumptions** — **AKClientLib** assumes only that your elements have IDs and attributes; no virtual DOM, no state reactivity system.
-- **Extendable by design** — Power users can write their own logic using JavaScript, but it's never required to get started.
+- **HTML is the source of truth** --- The goal is to empower designers and devs to build behavior-rich interfaces using familiar tools and the declarative power of HTML.
+- **Minimal assumptions** --- **AKClientLib** assumes only that your elements have IDs and attributes; no virtual DOM, no state reactivity system.
+- **Extendable** --- Power users can write their own logic using JavaScript, but it's never required to get started.
 
 ## Extending AKClientLib
 
